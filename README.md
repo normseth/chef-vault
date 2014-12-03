@@ -123,7 +123,7 @@ NOTE: chef-vault 1.0 knife commands are not supported!  Please use chef-vault 2.
     <td>update</td>
   </tr>
   <tr>
-    <td>-P</td>
+    <td>nil</td>
     <td>--clean-unknown-clients</td>
     <td>Remove unknown clients during key rotation</td>
     <td>nil</td>
@@ -161,12 +161,21 @@ Do `chef-vault --help` for all available options
 
     chef-vault -v passwords -i root -a password -k /etc/chef/knife.rb
 
-## License and Author:
+## Authors
 
 Author:: Kevin Moser - @moserke<br>
 Author:: Eli Klein - @eliklein<br>
 Author:: Joey Geiger - @jgeiger<br>
 Author:: Joshua Timberman - @jtimberman<br>
+
+## Contributors
+
+Contributor:: Matt Brimstone (https://github.com/brimstone)
+Contributor:: Thomas Gschwind (https://github.com/thg65)
+Contributor:: Reto Hermann
+
+## License
+
 Copyright:: Copyright (c) 2013-14 Nordstrom, Inc.<br>
 License:: Apache License, Version 2.0
 
