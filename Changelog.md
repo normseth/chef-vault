@@ -1,9 +1,10 @@
 ## Planned (Unreleased)
 
+## Released
+## v2.4.0 / 2014-12-03
 * add simplecov test coverage configuration (Doug Ireton)
 * add --clean-unknown-clients switch to knife remove/rotate (Thomas Gschwind and Reto Hermann)
 
-## Released
 ## v2.3.0 / 2014-10-22
 * add --clean switch to knife update (thanks to Matt Brimstone)
 * added aruba CLI testing framework (just for --clean option for now)
