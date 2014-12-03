@@ -122,6 +122,14 @@ NOTE: chef-vault 1.0 knife commands are not supported!  Please use chef-vault 2.
     <td>nil</td>
     <td>update</td>
   </tr>
+  <tr>
+    <td>-P</td>
+    <td>--clean-unknown-clients</td>
+    <td>Remove unknown clients during key rotation</td>
+    <td>nil</td>
+    <td>nil</td>
+    <td>remove, rotate</td>
+  </tr>
 </table>
 
 ## USAGE IN RECIPES

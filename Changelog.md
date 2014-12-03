@@ -1,6 +1,7 @@
 ## Planned (Unreleased)
 
-* add simplecov test coverage tool
+* add simplecov test coverage configuration (Doug Ireton)
+* add --clean-unknown-clients switch to knife remove/rotate (Thomas Gschwind and Reto Hermann)
 
 ## Released
 ## v2.3.0 / 2014-10-22
@@ -83,4 +84,3 @@
 * Add encrypt cert
 
 ## v0.1.1 / 2013-03-14
-
