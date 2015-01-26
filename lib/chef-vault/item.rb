@@ -44,7 +44,17 @@ class ChefVault::Item < Chef::DataBagItem
 
         case action
         when :add
-          keys.add(load_client(node.name), @secret, "clients")
+
+          # A validation here allows chef-vault to skip over missing clients
+          clientquery = Chef::Search::Query.new
+          if clientquery.search(:client, "name:#{node.name}")[0] == []
+            msg = "Skipping #{node.name}. Client does not exist."
+            print msg
+            Chef::Log.warn msg
+          else
+            keys.add(load_client(node.name), @secret, "clients")
+          end
+
         when :delete
           keys.delete(node.name, "clients")
         else
